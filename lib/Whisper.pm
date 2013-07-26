@@ -15,7 +15,7 @@
 
 package Whisper;
 {
-  $Whisper::VERSION = '1.002';
+  $Whisper::VERSION = '1.003';
 }
 
 use strict;
@@ -337,6 +337,10 @@ Returns a hash refrence with data points and meta data for the given range:
 		],
 		'cnt' => 2
 	};
+
+=head1 CVS
+
+Current CVS: L<https://github.com/corecache/libwhisper-perl>
 
 =head1 COPYRIGHT AND LICENSE
 
