@@ -15,7 +15,7 @@
 
 package Whisper;
 {
-  $Whisper::VERSION = '1.024';
+  $Whisper::VERSION = '1.025';
 }
 
 use strict;
@@ -238,6 +238,12 @@ sub wsp_fetch {
 
 			$values->[$i] = [ $timestamp, $val ];
 			$current += $step;
+		}
+
+		# Format start/end too
+		if( $date_format ) {
+			$from_interval = POSIX::strftime($date_format, localtime($from_interval));
+			$until_interval = POSIX::strftime($date_format, localtime($until_interval));
 		}
 	}
 
