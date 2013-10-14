@@ -20,7 +20,7 @@ my %WriteMakefileArgs = (
   "LICENSE" => "apache",
   "NAME" => "Whisper",
   "PREREQ_PM" => {},
-  "VERSION" => "1.032",
+  "VERSION" => "1.033",
   "test" => {
     "TESTS" => "t/*.t"
   }
