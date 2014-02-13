@@ -7,3 +7,5 @@ dist.ini
 lib/Whisper.pm
 scripts/whisperl
 t/1_load.t
+t/2_usage.t
+t/test.wsp
